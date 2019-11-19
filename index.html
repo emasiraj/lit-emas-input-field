@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+  <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  
+  <script type="module" src="./lit-emas-input-field.js"></script>
+  <title>A very lit element</title>
+</head>
+<body>
+
+  <style>
+    lit-emas-input-field { 
+      width: 40%;
+    }
+    lit-emas-input-field#fieldWithCustomStyling { 
+      --title-color: rgb(0, 68, 255);
+      --title-text-align: center;
+      --title-font-size: 20px;
+
+      --litEmasInputField-border-style: hidden hidden hidden solid;
+      --litEmasInputField-border-width: 10px;
+      --litEmasInputField-border-color: rgb(0, 68, 205);
+      --litEmasInputField-background-color: rgba(0, 68, 255, 0.159);
+
+      --inputField-border: 2px solid grey;
+      --inputField-border-radius: 5px;
+
+      --submitButton-border: 2px solid grey;
+      --submitButton-border-radius: 5px;
+      --submitButton-background-color: rgb(0, 68, 205);
+      --submitButton-color: white;
+
+      --displayedInputdataField-border-style: hidden hidden solid solid;
+      --displayedInputdataField-border-width: 0px 0px 2px 5px;
+      --displayedInputdataField-border-color: rgb(128, 128, 128);
+      --displayedInputdataField-background-color: rgb(201, 201, 201);
+
+      --displayedInputdata-color: red;
+
+      --clearButton-border:2px solid grey;
+      --clearButton-border-radius: 5px;
+      --clearButton-background-color: rgb(0, 68, 205);
+      --clearButton-color: white;
+      --clearButton-width: 30%;
+    }
+
+  </style>
+  
+  <lit-emas-input-field id="regularField" fieldname="This is an input field">
+  </lit-emas-input-field>
+  </br>
+  <lit-emas-input-field id="fieldWithDropdown" fieldname="This is an input field with a dropdown" dropdownValues='["Jupiter", "Mars", "Pluto", "Saturn"]'>
+  </lit-emas-input-field>
+  </br>
+  <lit-emas-input-field id="fieldWithDropdownRequired" fieldname="This is an input field where a value from the dropdown is required" 
+                    dropdownValueRequired dropdownValues='["Jupiter", "Mars", "Pluto", "Saturn"]'>
+  </lit-emas-input-field>
+  </br>
+  <lit-emas-input-field id="maxCharacterField" fieldname="This is an input field with a max character limit of 5" maxCharacters="5">
+  </lit-emas-input-field>
+  </br>
+  <lit-emas-input-field id="fieldWithCustomStyling" fieldname="This is an input field with custom styling" placeholderText="Please fill in a value in this cool looking element"
+                    dropdownValues='["Jupiter", "Mars", "Pluto", "Saturn"]' displayedInputdata="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel urna eu nisi faucibus faucibus. Sed efficitur orci quis lorem posuere, et dictum purus rutrum.">
+  </lit-emas-input-field>
+
+  <script>
+  </script>
+</body>
+</html>
