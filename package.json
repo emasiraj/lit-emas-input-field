@@ -1,9 +1,9 @@
 {
-  "name": "start-lit-element",
+  "name": "lit-emas-input-field",
   "version": "1.0.0",
-  "description": "start-lit-element",
+  "description": "lit-emas-input-field",
   "repository": "https://github.com/PolymerLabs/start-lit-element.git",
-  "main": "start-lit-element.js",
+  "main": "lit-emas-input-field.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
